@@ -1,0 +1,288 @@
+/* =====================================
+   RESET DAN DASAR
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f9;
+    color: #263247;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header {
+    background: #1e293b;
+    color: #ffffff;
+    padding: 35px 30px;
+}
+
+.label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #93c5fd;
+    margin-bottom: 12px;
+}
+
+.header h1 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.header p {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.content {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d5dce5;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    background: #ffffff;
+    color: #263247;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3b82f6;
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+/* =====================================
+   INFORMASI INPUT DAN ERROR
+===================================== */
+
+.input-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    gap: 10px;
+}
+
+.input-info small,
+.error {
+    font-size: 12px;
+}
+
+#jumlahKarakter {
+    color: #64748b;
+    white-space: nowrap;
+}
+
+.error {
+    display: block;
+    color: #dc2626;
+    margin-top: 6px;
+}
+
+/* =====================================
+   RINGKASAN PENDAFTARAN
+===================================== */
+
+.summary {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 22px;
+}
+
+.summary h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 9px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 13px;
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-item span {
+    color: #64748b;
+}
+
+.summary-item strong {
+    text-align: right;
+    overflow-wrap: anywhere;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* =====================================
+   PESAN STATUS
+===================================== */
+
+.status {
+    display: none;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.status.success {
+    display: block;
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.status.failed {
+    display: block;
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+/* =====================================
+   TOMBOL
+===================================== */
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-submit {
+    flex: 1;
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-submit:hover {
+    background: #1d4ed8;
+}
+
+.btn-reset {
+    width: 110px;
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn-reset:hover {
+    background: #cbd5e1;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    padding: 18px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+/* =====================================
+   RESPONSIVE MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        border-radius: 9px;
+    }
+
+    .header {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .content {
+        padding: 22px 18px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn-reset {
+        width: 100%;
+    }
+
+    .summary-item {
+        font-size: 12px;
+    }
+}
